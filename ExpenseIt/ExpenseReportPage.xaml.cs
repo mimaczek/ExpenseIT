@@ -20,9 +20,18 @@ namespace ExpenseIt
     /// </summary>
     public partial class ExpenseReportPage : Page
     {
+
         public ExpenseReportPage()
         {
             InitializeComponent();
         }
+
+        // Custom constructor to pass expense report data
+        public ExpenseReportPage(object data) : this()
+        {
+            // Bind to expense report data.
+            this.DataContext = data;
+        }
+
     }
 }
