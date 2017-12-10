@@ -31,5 +31,10 @@ namespace ExpenseIt
             ExpenseReportPage expenseReportPage = new ExpenseReportPage();
             this.NavigationService.Navigate(expenseReportPage);
         }
+
+        private void peopleListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }
